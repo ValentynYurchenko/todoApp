@@ -1,0 +1,11 @@
+.todoFormContainer {
+  @apply mb-8;
+}
+
+.todoFormContainer form {
+  @apply flex items-center justify-center;
+}
+
+.todoFormContainer input {
+  @apply w-2/4 h-10 text-xl py-2.5 px-4 border-none rounded-md text-black;
+}

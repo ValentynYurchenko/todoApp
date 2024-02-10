@@ -1,0 +1,36 @@
+.todo {
+  @apply flex items-center py-2.5 px-4 my-4 mx-0 text-2xl
+    rounded text-black bg-white
+    select-none;
+}
+
+.todoText {
+  @apply w-full text-left;
+}
+
+.todoIcon {
+  @apply text-2xl mr-2.5 text-emerald-600;
+}
+
+.completedTodo {
+  @apply bg-inherit border-gray-600 border-2  text-gray-500;
+}
+
+.todo.completedTodo .todoIcon,
+.todo.completedTodo .checkIcon,
+.todo.completedTodo .deleteIcon {
+  @apply text-gray-500;
+}
+
+.checkIcon,
+.deleteIcon {
+  @apply cursor-pointer text-gray-500 py-0 px-1.5 text-4xl transition-transform hover:cursor-pointer hover:scale-125;
+}
+
+.checkIcon:hover {
+  @apply text-green-700;
+}
+
+.deleteIcon:hover {
+  @apply text-red-600;
+}
